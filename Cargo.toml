@@ -1,0 +1,16 @@
+[workspace]
+members = ["crates/*"]
+
+[workspace.package]
+edition = "2024"
+version = "0.1.0"
+
+[package]
+name = "minecrevy"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+minecrevy_net = { path = "crates/minecrevy_net" }
+bevy_app = "0.17.2"
+bevy_ecs = "0.17.2"
